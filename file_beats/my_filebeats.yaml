@@ -1,0 +1,7 @@
+filebeat.inputs:
+- type: log
+  paths:
+    - /root/Ansible/ELK/file_beats/logstash-tutorial-dataset
+output.elasticsearch:
+  hosts: ["localhost:9200"]
+  index : "db"
